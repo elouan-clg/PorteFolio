@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside class="selectionable">
+        <section>
+            <img src="./Photos/VercorsRedimentione.jpg" alt="Une photo du Vercors en hiver">
+            <p>Elouan CLERGET</p>
+            <p><a href="mailto:elouanclerget@gmail.com">elouanclerget@gmail.com</a></p>
+
+        </section>
+        <section>
+            <div>
+                <a href="#blablaSoi"><h2>À propos de moi</h2></a>
+                <a href="#pacours"><p>Parcours</p></a>
+                <a href="#extraSco"><p>Extrascolaire</p></a>
+            </div>
+            <div>
+               <a href="#projets"><h2>Les projets</h2></a>
+                <a href="#projSco"><p>scolaires</p></a>
+                <a href="#projPerso"><p>personnel</p></a>
+            </div>
+        </section>
+        <!-- <section>
+            <p>me contacter</p>
+        </section> -->
+    </aside>
+
+    <main>
+        <div>
+            <h1 id="blablaSoi">Parler de soi</h1>
+            <!-- <h2>Coté numérique</h2>
+            <p>Une erreur dans la base viral à été détectée</p> -->
+            
+            <h2 id="pacours">Parcours</h2>
+            <p>Je suis un jeune étudiant en fin de première année du BUT info de Grenoble.</p>
+            <p>Avant cela, j'ai fait mon cursus dans les écoles de secteurs dans les Monts d'Ardèches.</p>
+            <p>C'est au Lycée Polyvalent du Cheylard que j'ai fait mes premiers petits pas dans la programmation (outre Scratch) par la Spé NSI</p>
+            <p>Je ne vais pas m'avancer en disant que je <i>maitrise</i> plein de langages avec si peu de bagage et d'expérience, mais j'ai néanmoins des bases dans les langages étudiés (Python, Java, HTML/CSS, SQL, <del>R</del>)</p>
+
+            <h2 id="extraSco">Extrascolaire</h2>
+            <p>Je suis encore en première année du BUT info à l'heure où j'écris ces lignes et j'ai bien été absorbé par mon année, mais normalement cet été je pourrais me lancer dans 2 petits projets que j'ai laissés de côté en attendant d'avoir des cours m'expliquant comment faire cela</p>
+            <p>Vivant loin dans une contrée reculée mal fournie en moyens de transport en commun, j'ai passé mon permis de conduire pour pouvoir poursuivre mes études plus sereinement</p>
+            <p>J'aime les montagnes, d'où le fait de venir à Grenoble pour ma suite d'études, la proximité des montagnes me permet de faire plus facilement du ski, des randonnées et de l'escalade : 3 sports que j'affectionne particulièrement</p>
+        </div>
+        
+        <h1 class="h1Marge" id="projets">Projets</h1>
+        <h2 id="projSco">Dans un cadre scolaire</h2>
+        <section>
+            <!-- projetND pour non détaillé -->
+            <div class="projetND projet-S1-04">
+                <h3>S1.04</h3>
+                <p>cette SAE nous a amenés à créer et modifier une base de données</p>
+            </div>
+
+            <div class="projetND projet-MegaSae">
+                <h3>S2.[1256]</h3>
+                <p>Méga SAE comprenant de l'IHM, de la modélisation, des maths et de la gestion de projet</p>
+            </div>
+
+            <div class="projetND projet-serveur">
+                <h3>S2.03</h3>
+                <p>apprentissage évalué de l'installation d'un serveur sous ligne de commande.</p>
+            </div>
+
+
+            <div class="projetDetaille projet-S1-04 cache">
+                <h3>S1.04 Création d'une base de données</h3>
+                <h4>Quoi?</h4>
+                <p>L'Objectif de cette SAE était  de valider nos compétences avec PostgreSQL</p>
+                <p>L'exercice était de faire la BD, la remplir puis de la modifier dans un cadre de salle de bowling</p>
+                <h4>Comment?</h4>
+                <p>3 étapes</p><ul>
+                    <li><b>La création avec containtes</b>
+                        <p>Cette étape est le début logique : nous avont un client avec des contraintes (données par les professeurs donc adaptées pour un début de BUT) et nous avons dû faire la BDD en respectant les contraintes comme, par exemple, ne pas prendre de réservation d'une étape qui peut finir après l'heure de fermeture.</p>
+                    </li>
+                    <li><b>Peuplement et interrogation</b>
+                        <p>Cette étape est sans doute la plus simple, elle nécessitait juste des insertions (en respectant les dépendances) et des jointures pour vérifier que tout était dans l'ordre.</p>
+                    </li>
+                    <li><b>Modification de la BD: nouveaux besoins</b>
+                        <p>Dans cette dernière étape, notre client fictif nous demande des modifications pour des résultats plus intéressants pour lui, comme avoir que le nombre de chaussures en bon état et en quelle pointure, ou faire en sorte qu'à la place de 3 étapes maximum en 1 réservation on passe à 4 (Il y a vraiment des personnes qui font 4 étapes d'affilée ?).</p>
+                    </li>
+                </ul>
+                <h4>Difficultées rencontrées</h4>
+                <p>L'interdiction d'utilisation de triggers du fait que c'étaient les cours du semestre suivant, nous avons longuement cherché mais on nous à dit qu'il fallait juste suggérer que le problème était réglé au niveau du PHP.</p>
+                
+                <h4>Ma contribution</h4>
+                <p>Cette SAE était en binôme, elle concernait que du SQL et était dans les environs des vacances de Noël :</p>
+                <p>La première étape était à rendre le 20/12/2024. Sur cette étape nous avons travaillé ensemble, nous nous répartissions les tables pour aller plus vite mais nous nous sommes assez vite mis sur un seul ordinateur pour savoir comment résoudre les containtes.</p>
+                <p>La deuxième étape était à rendre le 9/1/2025, Grâce à une erreur de serveur, nous avons eu une semaine de délai supplémentaire. Étant donné que j'avais téléchargé le fichier en avance j'ai pu y travailler dessus pendant les vacances et je l'ai très fortement entamé.</p>
+                <p>La troisième étape était à rendre le 22/01/2025 (nous y avions accès après le rendu de la deuxième étape donc nous avons aussi subi le délai). Pour cette dernière étape nous nous sommes organisés pour faire une question sur deux chacun. Cela a demandé plus de coordination que de réflexion de code. Attention, je n'ai pas dit que nous avions du mal à nous coordonner.</p>
+                
+                <h4>Traces</h4>
+                <p>Malheureusment, un grand nettoyage plus ou moins volontaire de mon ordinateur est passé par là, mais j'ai quand même réussi à retrouver le dossier (j'espère final) à rendre pour l'étape 2.</p><a href="./../etape2.sql">Pour le télécharger</a>
+            </div>
+
+            <div class="projetDetaille projet-MegaSae cache">
+                <h3>S2.[1256]</h3>
+                <p>Méga SAE comprenant de l'IHM, de la modélisation, des maths et de la gestion de projet</p>
+                <p>L'explication arrivera plus tard</p>
+                <h4>What is Lorem Ipsum?</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                <h4>Why do we use it?</h4>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+            </div>
+
+            <div class="projetDetaille projet-serveur cache">
+                <h3>S2.03</h3>
+                <p>apprentissage évalué de l'installation d'un serveur sous ligne de commande.</p>
+                <p>L'explication arrivera aussi plus tard.</p>
+                <h4>Where does it come from?</h4>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                <h4>Where can I get some?</h4>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+            </div>
+            
+ 
+        </section>
+        <h2 id="projPerso">Dans un cadre professionel et personnel</h2>
+        <p>Comme dit plus tôt ces projets sont pour l'instant que dans mon esprit (avec quels fichiers peu approfondis) mais je tenais à les mettre ici.</p>
+        <section>
+            <div class="projetND projet-flechette">
+                <h3>Tournois de Fléchettes</h3>
+                <p>Ce projet est un site local permettant l'organisation de tournois.</p>
+            </div>
+            <div class="projetDetaille projet-flechette cache">
+                <h3>Tournois de Fléchettes</h3>
+                <p>Ce site a pour but d'aider le côté organisation de tournois de fléchettes, c'est à dire faire des poules et entrer les scores des participants puis de de mettre automatiquement les 2 meilleurs de chaque poule en quart de finale.</p>
+                <img src="./Photos/flechettes.png" alt="dessin du projet">
+            </div>
+            <div class="projetND projet-TpT">
+                <h3>Jeu tour par tour</h3>
+                <p>Il s'agit là d'un mini jeu qui n'a rien d'exeptionnel.</p>
+            </div>
+            <div class="projetDetaille projet-TpT cache">
+                <h3>Jeu tour par tour</h3>
+                <p>Pour m'exercer avec Python j'ai fait un petit jeu tour par tour en ligne de commande mais il me manquait une interface graphique. Je le referai sans doute cet été en Java pour avoir mon interface avec JavaFX.</p>
+                <a href="./../un_jeu.zip">Le jeu</a>
+            </div>
+        </section>
+        <!-- <h2>Dans un cadre personnel</h2>
+        <section>
+            <div>
+                <h3>SX.0X</h3>
+                <p>du blabla</p>
+            </div>
+            <div class=projet>
+                <h3>SX.0X</h3>
+                <p>du blabla</p>
+            </div>
+        </section> -->
+    </main>
+ 
+    <footer class="S1-04">
+        <p>fait par mes soins, touts droits réserves</p>
+        <p><a href="mailto:elouanclerget@gmail.com">elouanclerget@gmail.com</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
